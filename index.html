@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jean-Emmanuel Gallo</title>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav id="nav" class="transparent">
+    <a id="logo" href="#"><img id="brand" src="img/logo.png" alt=""></a>
+    <ul>
+      <li>
+        <a href="#">Accueil</a>
+      </li>
+      <li>
+        <a href="#">Qui suis-je ?</a>
+      </li>
+      <li>
+        <a href="#">Prestations</a>
+      </li>
+      <li>
+        <a href="#">Portfolio</a>
+      </li>
+      <li>
+        <a id="last" href="#">Contact</a>
+      </li>
+    </ul>
+    <div id="icons"></div>
+  </nav>
+  
+<header>
+  <div id="backgroundimage">
+    <h1 class="msg">DÉVELOPPEUR <span class="auto-type"></span></h1>
+    <div id="mobmsg">
+      <h1 class="msgm">DÉVELOPPEUR</h1>
+      <span class="am"> WEB MOBILE</span>
+    </div>
+</div>
+</header>
+
+
+<main>
+  <section id="frstpart">
+    <div class="top">
+      <h1 class="titre-t">Jean-Emmanuel Gallo</h1>
+      <h3 class="st">Développeur Web et Mobile</h3>
+    </div>
+    
+<div id="imgl">
+  <img class="tek" src="img/html.png" alt="">
+  <img class="tek1" src="img/css.png" alt="">
+  <img class="tek2" src="img/figma.png" alt="">
+  <img class="tek3" src="img/js.svg" alt="">
+  <img class="tek4" src="img/php.png" alt="">
+</div>
+    <div id="undert">
+    <div class="first">
+    <h1 class="titre-l">Développeur Passionné</h1>
+    <p class="txt-l">
+      À 26 ans, je suis un développeur passionné, autodidacte depuis deux ans. 
+      En parallèle de mon alternance, je m'épanouis en tant que freelance, 
+      explorant divers projets qui affinent ma polyvalence. Chaque jour, 
+      je m'immerge dans le code avec enthousiasme, repoussant les limites 
+      de mes compétences. 
+    </p>
+  </div>
+  <div class="second">
+    <h1 class="titre-r">Développeur autodidacte</h1>
+    <p class="txt-r">Ayant toujours soif d'apprendre, je continue de me former sur
+      les nouvelles technologies. En dehors de mes projets professionnels, je consacre
+      le plus clair de mon temps à la vaille informatique. Je continue de me former 
+      sur les technologies que je maîtrise, et d'en apprendre de nouvelles. 
+    </p>
+  </div>
+</div>
+  </section>
+
+
+<div class="parallax">
+  <img class="rimg" src="img/red.png" alt="">
+</div>
+
+
+<section id="scdpart">
+
+</section>
+
+</main>
+
+  <script src="./index.js"></script>
+
+
+<footer>
+  <section id="topband">
+      <a id="logo3" href="#"><img id="brand2" src="img/logo2.png" alt=""></a>
+    <div id="socm">
+      <img class="lm" src="img/telegram.png" alt="telegram">
+      <img class="lm" src="img/insta.png" alt="">
+   </div> 
+  </section>
+  <div class="sepbar0"></div>
+  <section id="ftext">
+    <div id="ltext">
+      <h1 id="lftitle">Développeur Web et Web Mobile</h1>
+      <div class="sepbar"></div>
+      <section id="fcontact">
+        <div id="home">
+          <img class="contact" src="img/home.png" alt="">
+          <p class="address">26 Traverse de la Malvina, 13002 Marseille</p>
+        </div>
+        <div id="tel">
+          <img class="contact" src="img/phone-call.png" alt="">
+          <p class="address">+33 6 60 14 08 02</p>
+        </div>
+        <div id="mail">
+          <img class="contact" src="img/email.png" alt="">
+          <p class="address">gallojean.emmanuel@gmail.com</p>
+        </div>
+      </section>
+    </div>
+    <div id="rtext">
+    <h1 id="lftitle">Développeur Web et Web Mobile</h1>
+    <div class="sepbar"></div>
+      <p id="lfp">Développeur Web et Mobile, Je suis prêt à étudier vos
+        demandes. Dans le cadre de ma formation, en plus de mon alternance,
+        je suis en recherche constante de nouveaux défis. Je me tiens donc à votre 
+        disposition pour étudier tous vos projets.
+      </p>
+    </div>
+  </section>
+</footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+<script>
+
+// Sélectionnez l'élément de la navbar
+const nav = document.getElementById('nav');
+
+// Ajoutez un gestionnaire d'événements de défilement à la fenêtre
+window.addEventListener('scroll', function () {
+  // Vérifiez la position de défilement de la page
+  if (window.scrollY > 0) {
+    // Si la page est défilée, ajoutez la classe non transparente à la navbar
+    nav.classList.remove('transparent');
+  } else {
+    // Si la page est en haut, ajoutez la classe transparente à la navbar
+    nav.classList.add('transparent');
+  }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.innerWidth > 809) {
+    const sr = ScrollReveal();
+
+    sr.reveal('.top', {
+      origin:'top',
+      distance:'50px',
+      duration: 1000,
+      easing: 'ease-in-out',
+    });
+    // Configurer l'animation pour titre-l et txt-l (de gauche à droite)
+    sr.reveal('.titre-l, .txt-l', {
+      origin: 'left',
+      distance: '50px', // ou une autre valeur
+      duration: 2000,
+      easing: 'ease-in-out',
+    });
+
+    // Configurer l'animation pour titre-r et txt-r (de droite à gauche)
+    sr.reveal('.titre-r, .txt-r', {
+      origin: 'right',
+      distance: '50px', // ou une autre valeur
+      duration: 2000,
+      easing: 'ease-in-out',
+    });
+
+    sr.reveal('.rimg', {
+      origin: 'top',
+      distance: '50px',
+      duration: 2000,
+      easing: 'ease-in-out',
+    });
+
+    sr.reveal('.tek', {
+      origin:'bottom',
+      distance: '30px',
+      duration: 500,
+      easing:'ease-in-out',
+    });
+    sr.reveal('.tek1', {
+      origin:'bottom',
+      distance: '30px',
+      duration: 1000,
+      easing:'ease-in-out',
+    });
+    sr.reveal('.tek2', {
+      origin:'bottom',
+      distance: '30px',
+      duration: 1500,
+      easing:'ease-in-out',
+    });
+    sr.reveal('.tek3', {
+      origin:'bottom',
+      distance: '30px',
+      duration: 2000,
+      easing:'ease-in-out',
+    });
+    sr.reveal('.tek4', {
+      origin:'bottom',
+      distance: '30px',
+      duration: 2500,
+      easing:'ease-in-out',
+    })
+  }});
+
+  var typed = new Typed(".auto-type", {
+    strings: ["WEB", "MOBILE"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+  });
+</script>
+</body>
+
+</html>
